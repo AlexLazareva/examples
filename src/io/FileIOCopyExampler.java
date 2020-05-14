@@ -7,8 +7,8 @@ import java.io.IOException;
 
 public class FileIOCopyExampler {
     public static void main(String[] args) {
-        try(FileInputStream fileInputStream = new FileInputStream("C:\\Users\\User\\Downloads\\screens\\mac4.png");
-            FileOutputStream fileOutputStream = new FileOutputStream("C:\\Users\\User\\Downloads\\screens\\2.png")) {
+        try(FileInputStream fileInputStream = new FileInputStream("...\\screens\\mac4.png");
+            FileOutputStream fileOutputStream = new FileOutputStream("...\\screens\\2.png")) {
             int c;
             while ((c = fileInputStream.read()) != -1) {
                 fileOutputStream.write(c);
